@@ -12,7 +12,7 @@ import (
 // 服务名
 const (
 	SONNY_SERVICE_NAME = "Sonny"
-	SONNY_SERVICE_API  = "/v1/alaya/core/sonny"
+	SONNY_SERVICE_API  = "/v1/service/core/sonny"
 )
 
 // sonny服务定义
