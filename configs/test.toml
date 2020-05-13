@@ -1,0 +1,19 @@
+service_name = "service_core"
+
+# 运行环境配置
+[env]
+    # web server配置
+    [env.http_server]
+    #    host = "127.0.0.1" # 本地IP地址 不设置将会自动获取
+        host = "" # 本地IP地址 不设置将会自动获取
+        address = "0.0.0.0:8064"
+
+    # 日志配置
+    [env.logging]
+        level = "info"
+        [env.logging.file]
+            filename = "service_core.log"
+            path = "tmp/logs"
+            file_name_date_format = "20060102.150405"
+            file_name_date_align = true
+            rotation_count = 3
